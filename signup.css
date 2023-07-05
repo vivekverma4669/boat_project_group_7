@@ -1,46 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-body {
+#NavContainer{
+    position: sticky;
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    min-width: 80vw;
-    margin: 0;
-    padding: 0;
+    height: 70px;
+    justify-content: space-around;
+    margin-top: 10px;
+
 }
+.iconb{
+   margin-top: 20px;
+}
+
+#boat{
+    width: 90px;
+}
+#search{
+    padding-left: 30px;
+    width: 300px;
+    height: 35px;
+    background: url('https://cdn-icons-png.flaticon.com/512/482/482631.png');
+    background-position: 10px 10px ; 
+    background-repeat: no-repeat;
+    background-size: 17px;
+    border-radius: 40px;
+    border: 2px solid rgb(244,245,247);
+    background-color:rgb(244,245,247) ;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.logo{
+    margin-top: 20px;
+    height: 35px;
+    width: 35px;
+    margin-left: -20px;
+}
+.logoP{
+    margin-top: 23px;
+    height: 30px;
+    width: 30px;
+}
+.top{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    background-color: rgb(239,244,247);
+    height: 30px;
+    padding-top: 13px;
+    margin: -10px;
+    cursor: pointer;
+
+}
+.top>span{
+    font-weight: bold;
+}
+#NavContainer>div{
+    display: flex;
+   margin-top: 15px;
+   margin-right: 100px;
+   gap: 30px;
+   
+}
+.icon{
+    display: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 15px;
+}
+#NavContainer>div>p:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(190, 55, 55);
+    text-decoration-thickness: 2px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+
+
+
 
 .container {
     text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-#form {
+/* #form {
     margin-top: 35px;
     
-}
+} */
+
 
 img {
     display: block;
     margin: 0 auto;
-}
+    width: 210px;
+    margin: 20px
+} 
+
 #form>h2{
-    text-align: center;
+    text-align: left;
+    /* margin-right: 366px; */
     font-weight: 700;
-    font-size: 24px;
+    font-size: 25px;
     color: #000;
     line-height: 10px;
     letter-spacing: -.01em; 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
-span{
+
+#form>span{
         font-weight: 700;
-        font-size: 20px;
-        /* line-height: 10px; */
+        font-size: 17px;
+        margin-right:119px;
+        
         text-align: center;
         color: #131313;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+#form> input {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    background-color: rgba(248, 224, 224, 0.726);
+    font-weight: lighter;
+    font-size: 15px;
+  }
+
+
  span a {
     color: #ed1c24;
     margin-left: 2px;
@@ -48,17 +145,8 @@ span{
     line-height: 34px;
     text-align: left;
  }
- input{
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    margin-top: 1px;
-    border: 1px solid gray;
-    background-color:rgba(248, 224, 224, 0.726);
-    font-weight: lighter;
-    font-size: 15px;
- }
+
+  
  #btn{
     width: 100%;
     height: 50px;
@@ -68,5 +156,195 @@ span{
     font-size: 22px;
     font-weight: bold;
     color: white;
+    margin-bottom: 130px;
     
- }
+ } 
+
+/* Add this to your signup.css file */
+
+/* Footer Styles */
+#top {
+    background-color: #e7f0f5;
+    padding: 20px 0;
+    /* margin-top: 130px; */
+    height: 300px;
+}
+
+#middle {
+    background-color:#eff4f7;
+    padding: 20px 0;
+
+    /* margin-top: 130px; */
+    height: 1000px;
+}
+
+#bottom {
+    background-color: #e7f0f5;
+    padding: 20px 0;
+    /* margin-top: 130px; */
+    height: 300px;
+    
+}
+.footer-container{
+    display: flex;
+}
+
+.item_content>img{
+    width: 151px;
+    height: 62px;
+    margin-left: 38px;
+    
+}
+.item_content>span{
+    margin-left: 38px;
+    font-size: 24px;
+   font-weight: bold;
+   opacity: 1;
+   line-height: normal;
+   margin-bottom: 5px;
+   display: block;
+   color: #293036;
+   
+}
+#Subscribe_email{
+    font-size: 13px;
+    width: 433px;
+    height: 50px;
+    padding: 0px 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+/* REMOVE THIS, USE YOUR OWN  */
+/* html,body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, Sans-serif;
+  } */
+  /* .dummy_page {
+    height: 200px;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 60px 0px;
+  } */
+  /* STYLES SPECIFIC TO FOOTER  */
+
+/* 
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+  } */
+
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: right;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    display: grid;
+    margin-left: 190px;
+  }
+  /* .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  } */
+
+
+.col>h3{
+    font-size: 13px;
+  }
+
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  /* .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  } */
+  
+  .footer .col ul li:hover {
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+
+  /* .clearfix {
+    clear: both;
+  } */
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+
+  
+  
+  
+  
+
