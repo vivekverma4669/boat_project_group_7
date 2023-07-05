@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="Nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.boat-lifestyle.com/">
+  <link rel="stylesheet" href="silder.css">
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+
+<body>
+  <p class="top">Groove to your favourite tunes with <span>Rockerz 235 V2 </span> — now at <span>899</span>.💥 Shop now!
+  </p>
+ 
+  <div id="NavContainer" class="topnav">
+    <a href="javascript:void(0);" class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a class="iconb" href="Index.html"><img id="boat"
+        src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small.svg?v=1682421543" alt="Boatlogo"></a>
+    <div>
+      <p>Categories˅</p>
+      <p>Daily Deals</p>
+      <p>Gift With Boat</p>
+      <p>More˅</p>
+    </div>
+    <input id="search" type="text" placeholder="Search your product">
+    <a href=""><img class="logoP"
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="loginlogo"></a>
+    <a href=""><img class="logo" src="images/Cart.png" alt="cart"></a>
+  </div>
+  <hr>
+
+
+  <!-- silder -->
+
+   <!-- image slider start -->
+   <div class="slider">
+    <div class="slides">
+
+    <!-- readio buttons -->
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <!-- radio butto end -->
+
+    <!-- slide image  -->
+
+    <div class="slide first">
+     <img src="https://www.boat-lifestyle.com/cdn/shop/files/ultima-connect_desktop_1999_1400x.jpg?v=1688452651" alt="lmage"  id="image1">
+    </div>
+
+    <div class="slide">
+    <img src="https://www.boat-lifestyle.com/cdn/shop/files/Kick_Desktop_1400x.png?v=1687761599" alt="image"  id="image2">
+    </div>
+
+    <div class="slide">
+    <img src="https://www.boat-lifestyle.com/cdn/shop/files/AB2000Pro-desktop_1400x.jpg?v=1688020967" alt="image" id="image3">
+    </div>
+    
+    <div class="slide">
+     <img src="https://www.boat-lifestyle.com/cdn/shop/files/SASS_DESKTOP_1400x.jpg?v=1686545976" alt="image"  id="image4">
+    </div>
+
+    <!-- image end -->
+
+
+    <!-- auto navigation start -->
+  <div class="auto-navigate">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+    <div class="auto-btn4"></div>
+   </div>
+    <!-- auto navigation end -->
+
+</div>
+
+<!-- manual-navigate start -->
+ <div class="manual-navigate">
+  <label for="radio1" class="manual-btn"></label>
+  <label for="radio2" class="manual-btn"></label>
+  <label for="radio3" class="manual-btn"></label>
+  <label for="radio4" class="manual-btn"></label>
+ </div>
+ <!-- manual-navigate end-- -->
+
+</div>
+
+
+
+  <!-- Autoplaye Images -->
+  <p class="sell">Explore <span> Bestselle<span>rs</span></span></p>
+  <div id="videos">
+    
+    <div>
+      <video autoplay playsinline loop style="pointer-events: none;">
+        <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_RUxbhR7CvjkNtlFUDxgw9.mp4?v=5354683704256941483"
+          type="video/mp4">
+      </video>
+      <h3>SmartWatches</h3>
+    </div>
+    <div><video autoplay playsinline loop style="pointer-events: none;">
+      <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_Bejc8URjU1NSXdhabLCmD.mp4?v=6517359867084812371"
+        type="video/mp4">
+    </video>
+  <h3>Wireless Earbuds</h3>
+</div>
+    <div><video autoplay playsinline loop style="pointer-events: none;">
+      <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_OyJHanx4QSdUN3OVGTO7C.mp4?v=14150048875423312161"
+        type="video/mp4">
+    </video>
+  <h3>Neckbands</h3></div>
+    <div>
+      <video autoplay playsinline loop style="pointer-events: none;">
+        <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_CpsRIdJWtpXyFN3enwbXd.mp4?v=14881283340894746343"
+          type="video/mp4">
+      </video>
+      <h3>Headphones</h3>
+    </div>
+  </div>
+   
+
+
+
+  <!-- Products -->
+  <p class="sell">Daily <span> De<span>als</span></span></p>
+  <div id="ProdList">
+    
+  </div>
+
+
+<!-- catogries -->
+<p class="sell">Shop by <span> Categori<span>es</span></span></p>
+<div id="Category">
+
+</div>
+
+
+
+<!-- New launches -->
+<p class="sell">New <span> Launch<span>es</span></span></p>
+<div id="Launches">
+
+</div>
+  
+
+<!-- Boat Features -->
+<div id="Features">
+
+</div>
+
+</body>
+<script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+     document.getElementById('radio'+counter).checked=true;
+     counter++;
+     if(counter>4){
+         counter=1;
+     }
+    },3500);
+     </script>
+     <script src="Index.js"></script>
+</html>
