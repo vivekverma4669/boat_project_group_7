@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./slider.css">
+</head>
+<body>
+    
+
+
+    <!-- image slider start -->
+    <div class="slider">
+        <div class="slides">
+
+        <!-- readio buttons -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio butto end -->
+
+        <!-- slide image  -->
+    
+        <div class="slide first">
+         <img src="images/img1.webp" alt="lmage"  id="image1">
+        </div>
+
+        <div class="slide">
+        <img src="images/img2.webp" alt="image"  id="image2">
+        </div>
+
+        <div class="slide">
+        <img src="images/img3.webp" alt="image" id="image3">
+        </div>
+        
+        <div class="slide">
+         <img src="images/img4.webp" alt="image"  id="image4">
+        </div>
+    
+        <!-- image end -->
+
+
+        <!-- auto navigation start -->
+      <div class="auto-navigate">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+       </div>
+        <!-- auto navigation end -->
+
+    </div>
+
+    <!-- manual-navigate start -->
+     <div class="manual-navigate">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+     </div>
+     <!-- manual-navigate end-- -->
+
+</div>
+    <!-- image slider end-->
+
+
+  
+    </body>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+         document.getElementById('radio'+counter).checked=true;
+         counter++;
+         if(counter>4){
+             counter=1;
+         }
+        },3500);
+         </script>
+    </html>
+
+   
