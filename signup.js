@@ -13,14 +13,15 @@ function storeData() {
         password: password
     };
 
-    var storedData = localStorage.getItem("userData");
-    if (storedData !== null) {
-        var storedEmail = JSON.parse(storedData).email;
-        if (storedEmail === email) {
-            alert("User already exists. Please log in.");
-            return;
-        }
-    }
-    localStorage.setItem("userData", JSON.stringify(userData));
+    var storedData = localStorage.getItem("users");
+    var users = storedData ? JSON.parse(storedData) : [];
 
+    if (users.some(user => user.email === email)) {
+        alert("User already exists. Please log in.");
+        return;
+    }
+
+    users.push(userData);
+    localStorage.setItem("users", JSON.stringify(users));
+    alert("Signup successful!");
 }
