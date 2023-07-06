@@ -1,3 +1,6 @@
+/* Navbar */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
@@ -81,6 +84,8 @@ a{
 }
 
 
+/* login css */
+
 
 
 .container {
@@ -107,7 +112,7 @@ img {
     margin: 20px
 } 
 
-input {
+#form>input {
     width: 100%;
     height: 45px;
     border-radius: 10px;
@@ -116,6 +121,7 @@ input {
     background-color: rgba(248, 224, 224, 0.726);
     font-weight: lighter;
     font-size: 15px;
+    border: none;
   }
 
 
@@ -167,3 +173,4 @@ span>a {
  }
 
 
+/* Footer css  */

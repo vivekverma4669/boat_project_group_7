@@ -135,6 +135,7 @@ img {
     background-color: rgba(248, 224, 224, 0.726);
     font-weight: lighter;
     font-size: 15px;
+    border: none;
   }
 
 
@@ -163,28 +164,8 @@ img {
 /* Add this to your signup.css file */
 
 /* Footer Styles */
-#top {
-    background-color: #e7f0f5;
-    padding: 20px 0;
-    /* margin-top: 130px; */
-    height: 300px;
-}
 
-#middle {
-    background-color:#eff4f7;
-    padding: 20px 0;
 
-    /* margin-top: 130px; */
-    height: 1000px;
-}
-
-#bottom {
-    background-color: #e7f0f5;
-    padding: 20px 0;
-    /* margin-top: 130px; */
-    height: 300px;
-    
-}
 .footer-container{
     display: flex;
 }
@@ -216,135 +197,104 @@ img {
 }
 
 
-
-/* REMOVE THIS, USE YOUR OWN  */
-/* html,body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, Sans-serif;
-  } */
-  /* .dummy_page {
-    height: 200px;
-    width: 100%;
-    background-color: #f0f0f0;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 60px 0px;
-  } */
-  /* STYLES SPECIFIC TO FOOTER  */
-
-/* 
-  .footer {
-    width: 100%;
-    position: relative;
-    height: auto;
-    background-color: #070617;
-  } */
-
-  .footer .col {
-    width: 190px;
-    height: auto;
-    float: right;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
-    display: grid;
-    margin-left: 190px;
+ #top {
+    background-color:#e7f0f5;
+    padding: 20px;
   }
-  /* .footer .col h1 {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
-  } */
-
-
-.col>h3{
-    font-size: 13px;
+  #middle {
+    background-color:#eff4f7;
+    padding: 20px;
   }
-
-  .footer .col ul {
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex-basis: 20%;
+    margin-bottom: 18px;
+    margin-left: 84px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  .footer .col ul li {
-    color: #999999;
+  
+  .footer-column li {
+    margin-bottom: 5px;
     font-size: 14px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 5px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
   }
-  /* .social ul li {
+  
+  .social-icons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-icon {
     display: inline-block;
-    padding-right: 5px !important;
-  } */
+    margin: 0 10px;
+    font-size: 24px;
+    color: #555555;
+  }
   
-  .footer .col ul li:hover {
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
-  }
-
-  /* .clearfix {
-    clear: both;
-  } */
-  @media only screen and (min-width: 1280px) {
-    .contain {
-      width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  @media only screen and (max-width: 1139px) {
-    .contain .social {
-      width: 1000px;
-      display: block;
-    }
-    .social h1 {
-      margin: 0px;
-    }
-  }
-  @media only screen and (max-width: 950px) {
-    .footer .col {
-      width: 33%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h1 {
-        font-size: 14px;
-      }
-      .footer .col ul li {
-        font-size: 13px;
-      }
-  }
-  @media only screen and (max-width: 340px) {
-    .footer .col {
-      width: 100%;
-    }
+  .social-icon:hover {
+    color: #000000;
   }
 
   
-  
-  
-  
+#bottom {
+  background-color: #e7f0f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #0e0303;
+}
+
+.social-icon:hover {
+  color: #000000;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #555555;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #000000;
+}
+
+.footer-copyright,
+.footer-contact {
+  margin-top: 20px;
+  color: #555555;
+  font-size: 14px;
+}
+.social-icons>span{
+  font-size: 18px;
+  font-weight: bold;
+}
 
