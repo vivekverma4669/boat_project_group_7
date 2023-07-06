@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Navbar Css */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 #NavContainer{
     position: sticky;
@@ -81,6 +82,7 @@ a{
 }
 
 
+/* Signup page CSS */
 
 
 .container {
@@ -91,12 +93,6 @@ a{
     justify-content: center;
   }
 
-/* #form {
-    margin-top: 35px;
-    
-} */
-
-
 img {
     display: block;
     margin: 0 auto;
@@ -106,7 +102,6 @@ img {
 
 #form>h2{
     text-align: left;
-    /* margin-right: 366px; */
     font-weight: 700;
     font-size: 25px;
     color: #000;
@@ -120,7 +115,6 @@ img {
         font-weight: 700;
         font-size: 17px;
         margin-right:119px;
-        
         text-align: center;
         color: #131313;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -161,7 +155,6 @@ img {
     
  } 
 
-/* Add this to your signup.css file */
 
 /* Footer Styles */
 
