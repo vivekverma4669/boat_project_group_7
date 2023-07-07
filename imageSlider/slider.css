@@ -110,16 +110,20 @@ margin-left: -60%;
     margin-right: 40px;
 }
 
-#radio1:checked~.auto-navigate .auto-btn1{
-    background-color: black;
+#radio1:checked ~.auto-navigate .auto-btn1{
+    background-color: rgb(255, 255, 255);
+    color: white;
 }
 #radio2:checked~.auto-navigate .auto-btn2{
-    background-color : black;
+    background-color : rgb(255, 255, 255);
+    color: white;
 }
 #radio3:checked~.auto-navigate .auto-btn3{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    color: white;
 }
 #radio4:checked~.auto-navigate .auto-btn4{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
