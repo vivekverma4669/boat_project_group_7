@@ -2,7 +2,6 @@
 *{
   font-family: 'Poppins', 'sans-serif';
 }
-
 .container{
     padding: 15px;
     width:  100%;
@@ -289,7 +288,7 @@ display: inline;
       margin: 30px;
     }
     .detailTable  span:nth-child(even) {
-      color: rgb(255, 0, 98);
+      color: rgb(233, 11, 96);
     }
     
     .tableContainer img{

@@ -4,7 +4,7 @@ var products=[
         work:"Clear Calling",
         rating:"4.9",
         name:"Airdopes 115",
-        desc:"1,499",
+        desc:"1499",
         org:"2990",
         off:"50% off"
     },
@@ -13,7 +13,7 @@ var products=[
         work:"BT Calling",
         rating:"4.8",
         name:"Wave Flex Connect",
-        desc:"1,499",
+        desc:"1499",
         org:"7990",
         off:"81% off"
     },
@@ -31,7 +31,7 @@ var products=[
         work:"BT Calling",
         rating:"4.7",
         name:"Storm Call",
-        desc:"1,799",
+        desc:"1799",
         org:"7990",
         off:"77% off"
     }
@@ -60,7 +60,6 @@ var products=[
     org.textContent=ele.org;
     off.textContent=ele.off;
     add.textContent="Add To Cart";
-
 
    add.addEventListener("click",function(){
     var arr=JSON.parse(localStorage.getItem("cart")) || [];
@@ -128,6 +127,9 @@ var products=[
       img1.setAttribute("src",ele.img1);
       name1.textContent=ele.name;
       
+      img1.addEventListener("click",function(){
+        window.location.href="SmartWatch.html";
+      })
       catdiv.append(img1,name1);
       parent.append(catdiv);
 })
@@ -143,7 +145,7 @@ var launches=[
       work:"Wireless Subwoofer",
       rating:"Be first to review",
       name:"Avante Bar pro",
-      desc:"10,499",
+      desc:"10499",
       org:"22,990",
       off:"54% off"
   },
@@ -152,7 +154,7 @@ var launches=[
       work:"BT Calling",
       rating:"Be first to review",
       name:"Ultima Connect",
-      desc:"1,999",
+      desc:"1999",
       org:"7990",
       off:"73% off"
   },
@@ -161,7 +163,7 @@ var launches=[
       work:"BT Calling",
       rating:"Be first to review",
       name:"Xtend Plus",
-      desc:"2,299",
+      desc:"2299",
       org:"8,999",
       off:"74% off"
   },
@@ -170,7 +172,7 @@ var launches=[
       work:"BT Calling",
       rating:"Be first to review",
       name:"Lunar Connect Ace",
-      desc:"2,499",
+      desc:"2499",
       org:"9990",
       off:"77% off"
   }
@@ -244,3 +246,51 @@ features.map(function(element,idx){
    parentt.append(imge,text);
    launch.append(parentt);
 })
+
+
+
+
+// Brand Ambastires
+var brand=[
+  {
+    img:"https://www.boat-lifestyle.com/cdn/shop/files/Fitness_Freak_2.png?v=1685083745",
+    hding:"For Fitness",
+    view:"view all ➲"
+  },
+  {
+    img:"https://www.boat-lifestyle.com/cdn/shop/files/Party_Animal_4.png?v=1685942349",
+    hding:"For Parties",
+    view:"view all ➲"
+  },
+  {
+    img:"https://www.boat-lifestyle.com/cdn/shop/files/Workaholic_2.png?v=1685083745",
+    hding:"For Work",
+    view:"view all ➲"
+  },
+  {
+    img:"https://www.boat-lifestyle.com/cdn/shop/files/Entertainment_2.png?v=1685083746",
+    hding:"For Entertainment",
+    view:"view all ➲"
+  },
+  {
+    img:"https://www.boat-lifestyle.com/cdn/shop/files/Audiophile_3.png?v=1685942349",
+    hding:"For Audiophiles",
+    view:"view all ➲"
+  }
+];
+brand.map(function(element,idx){
+  var launch=document.querySelector("#brand");
+  var parentt=document.createElement("div");
+  var imge=document.createElement("img");
+  var text=document.createElement("h3");
+  var view=document.createElement("p");
+
+  imge.setAttribute("src",element.img);
+   text.textContent=element.hding;
+   view.textContent=element.view;
+
+   parentt.append(imge,text,view);
+   launch.append(parentt);
+})
+
+
