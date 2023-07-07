@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      #NavContainer {
+        position: sticky;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        height: 70px;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+      .iconb {
+        margin-top: 20px;
+      }
+
+      #boat {
+        width: 90px;
+      }
+      #search {
+        padding-left: 30px;
+        width: 300px;
+        height: 35px;
+        background: url("https://cdn-icons-png.flaticon.com/512/482/482631.png");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        background-size: 17px;
+        border-radius: 40px;
+        border: 2px solid rgb(244, 245, 247);
+        background-color: rgb(244, 245, 247);
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+      .logo {
+        margin-top: 20px;
+        height: 35px;
+        width: 35px;
+        margin-left: -20px;
+      }
+      .logoP {
+        margin-top: 23px;
+        height: 30px;
+        width: 30px;
+      }
+      .top {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-size: 13px;
+        background-color: rgb(239, 244, 247);
+        height: 30px;
+        padding-top: 13px;
+        margin: -10px;
+        cursor: pointer;
+      }
+      .top > span {
+        font-weight: bold;
+      }
+      #NavContainer > div {
+        display: flex;
+        margin-top: 15px;
+        margin-right: 100px;
+        gap: 30px;
+      }
+      .icon {
+        display: none;
+        color: black;
+        font-size: 30px;
+        margin-top: 15px;
+      }
+      #NavContainer > div > p:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(190, 55, 55);
+        text-decoration-thickness: 2px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      a {
+        cursor: pointer;
+      }
+
+      #grand {
+        background-color: red;
+        width: 100%;
+        height: 650px;
+      }
+
+      #parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+      }
+      #child {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 98%;
+        height: 500px;
+        margin: auto;
+        text-align: center;
+        margin-top: 60px;
+        background-color: black;
+        border-radius: 20px;
+      }
+      #child > #ent {
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: "Poppins", sans-serif;
+        color: red;
+      }
+      #child > form > #mobile {
+        width: 50%;
+        height: 60px;
+        background-color: red;
+        border: none;
+      }
+      #child > form > #mobile::placeholder {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+        color: black;
+      }
+      #child > form > label {
+        color: red;
+      }
+      #child > form > #button {
+        width: 50%;
+        height: 60px;
+        margin-top: 50px;
+        font-size: 40px;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: red;
+        cursor: pointer;
+      }
+      #child > form > #button:hover {
+        width: 55%;
+      }
+      #wrong {
+        font-size: 40px;
+        color: red;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > h2 {
+        font-size: 40px;
+        text-align: left;
+        margin-left: 18px;
+        color: red;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > #mad {
+        text-align: right;
+        margin-top: -8%;
+        margin-right: 18px;
+        color: red;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > #address {
+        margin-top: 6%;
+      }
+      #child > #address > #pin {
+        width: 70%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: red;
+        border: none;
+      }
+      #child > #address > #pin::placeholder {
+        color: black;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > #address > #city {
+        width: 35%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: red;
+        border: none;
+      }
+      #child > #address > #city::placeholder {
+        color: black;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > #address > #state {
+        width: 35%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: red;
+        border: none;
+      }
+      #child > #address > #state::placeholder {
+        color: black;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > #address > #name {
+        width: 35%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: red;
+        border: none;
+      }
+      #child > #address > #name::placeholder {
+        color: black;
+        font-family: "Poppins", sans-serif;
+      }
+
+      #child > #address > #email {
+        width: 35%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: red;
+        border: none;
+      }
+      #child > #address > #email::placeholder {
+        color: black;
+        font-family: "Poppins", sans-serif;
+      }
+
+      #child > #address > #home {
+        width: 70%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: red;
+        border: none;
+      }
+      #child > #address > #home::placeholder {
+        color: black;
+        font-family: "Poppins", sans-serif;
+      }
+      #abt {
+        color: red;
+        font-family: "Poppins", sans-serif;
+        margin-top: 25px;
+      }
+      #child > #select {
+        color: red;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > #extra {
+        color: red;
+        font-family: "Poppins", sans-serif;
+      }
+      #child > #sibl1 > #upi1 {
+        width: 40%;
+        height: 50px;
+        background-color: red;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+      }
+      #child > #sibl1 > #cod {
+        width: 40%;
+        height: 50px;
+        background-color: red;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+      }
+      #child > #sibl1 > #atm {
+        width: 40%;
+        height: 50px;
+        background-color: red;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+      }
+      #child > #sibl1 > #wallet {
+        width: 40%;
+        height: 50px;
+        background-color: red;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+      }
+      #child > #sibl1 > #bank {
+        width: 40%;
+        height: 50px;
+        background-color: red;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+      }
+      #dis {
+        color: red;
+        font-family: "Poppins", sans-serif;
+        margin-top: 14%;
+      }
+
+      #h2OfOtp {
+        color: black;
+        font-size: 60px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .popup-content {
+        background-color: red;
+        padding: 30px;
+        border-radius: 5px;
+        text-align: center;
+        width: 700px;
+        height: 300px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      #otp-input {
+        padding: 10px;
+        background-color: black;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-left: 12px;
+        margin-top: -7%;
+        width: 40%;
+        height: 40px;
+        border: none;
+        text-align: center;
+        color: red;
+        font-size: 20px;
+      }
+
+      #placeOrder {
+        width: 20%;
+        height: 55px;
+        margin-left: 40%;
+        background-color: black;
+        color: red;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      #placeOrder:hover {
+        width: 25%;
+        height: 65px;
+        font-size: 35px;
+      }
+      .popup-content>#sub{
+        background-color: black;
+        color: red;
+        border: none;
+        width: 25%;
+        height: 65px;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+      .popup-content>#sub:hover{
+        width: 30%;
+      }
+      .popup-content>#conf{
+        background-color: black;
+        color: red;
+        border: none;
+        width: 25%;
+        height: 65px;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+     #confirmor{
+        color: black;
+        font-size: 70px;
+        font-family: "Poppins", sans-serif;
+     }
+     #veri{
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+     }
+
+     @media screen and (max-width: 1000px) {
+    .topnav p {display: none;}
+  
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  } 
+     @media screen and (max-width:800px){
+      #parent{
+        grid-template-columns: repeat(1,1fr);
+      }
+}
+  
+    </style>
+  </head>
+  <body>
+    <!--Nav part-->
+
+    <p class="top">
+      Groove to your favourite tunes with <span>Rockerz 235 V2 </span> — now at
+      <span>899</span>.💥 Shop now!
+    </p>
+
+    <div id="NavContainer" class="topnav">
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="iconb" href="Nav.html"
+        ><img
+          id="boat"
+          src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small.svg?v=1682421543"
+          alt="Boatlogo"
+      /></a>
+      <div>
+        <p>Categories˅</p>
+        <p>Daily Deals</p>
+        <p>Gift With Boat</p>
+        <p>More˅</p>
+      </div>
+      <input id="search" type="text" placeholder="Search your product" />
+      <a href=""
+        ><img
+          class="logoP"
+          src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989"
+          alt="loginlogo"
+        />
+      </a>
+      <a href=""><img class="logo" src="images/Cart.png" alt="cart" /></a>
+      <p id="totalitems"></p>
+    </div>
+    <div id="grand">
+      <div id="parent">
+        <div id="child">
+          <p id="ent">Enter Mobile Number</p>
+          <form action="">
+            <input type="number" id="mobile" placeholder="Enter Number" />
+            <br />
+            <input type="checkbox" />
+            <label for=""> Notify me for Orders, updates & offers </label>
+            <br />
+            <input type="submit" value="Continue →" id="button" />
+            <h2 id="wrong"></h2>
+          </form>
+        </div>
+        <!--Address Part-->
+        <div id="child">
+          <h2>Address</h2>
+          <p id="mad">*Mandatory Fields</p>
+          <form action="" id="address">
+            <input required type="number" placeholder="PinCode*" id="pin" />
+            <br />
+            <br />
+            <input
+              required
+              type="text"
+              name="City"
+              id="city"
+              placeholder="City*"
+            />
+            <input required type="text" id="state" placeholder="State*" />
+            <br />
+            <br />
+            <input required type="text" id="name" placeholder="Full Name*" />
+            <input type="email" id="email" placeholder="Email Address*" />
+            <br />
+            <br />
+            <input
+              type="text"
+              id="home"
+              placeholder="Full Address (House no., Area,etc)*"
+            />
+          </form>
+          <p id="abt">
+            Unleash the power of music with Boat - your go-to destination for
+            trendy audio solutions that redefine your listening experience.
+          </p>
+        </div>
+        <div id="child">
+          <p id="select">Please select payment method to complete the order</p>
+          <h4 id="extra">Extra ₹15 discount on UPI</h4>
+          <div id="sibl1">
+            <input type="submit" name="" value="Pay via UPI" id="upi1" />
+            <input type="submit" value="Cash on Delivery" id="cod" />
+            <br /><br />
+            <input type="submit" value="Pay via Card" id="atm" />
+            <input type="submit" value="Pay via Wallet" id="wallet" />
+            <br /><br />
+            <input type="submit" value="Pay via Netbanking" id="bank" />
+            <h2 id="dis"></h2>
+          </div>
+        </div>
+      </div>
+      <br />
+      <button id="placeOrder" onclick="openOTPPopup()">Place Order</button>
+    </div>
+
+    <!--OTP part-->
+
+    <div id="otp-popup" class="popup">
+      <div class="popup-content">
+        <h2 id="h2OfOtp">Enter OTP</h2>
+        <input type="password" id="otp-input" placeholder="Enter OTP" />
+        <br>
+        <br>
+        <button id="sub" onclick="validateOTP()">Submit</button>
+      </div>
+    </div>
+
+    <div id="confirm-order-popup" class="popup">
+      <div class="popup-content">
+        <h2 id="confirmor">Confirm Order 🎉</h2>
+        <p id="veri">Your OTP is verified. Click 'Confirm' to place your order.</p>
+        <button id="conf" onclick="confirmOrder()">Confirm</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var form = document.querySelector("form");
+  form.addEventListener("submit", function () {
+    event.preventDefault();
+    var phnNumber = form.mobile.value;
+
+    if (phnNumber == 1234567890) {
+      document.querySelector("#wrong").textContent = "Fill the Address part →";
+    } else if (phnNumber == "") {
+      document.querySelector("#wrong").textContent =
+        "Please enter the number first.";
+    } else {
+      document.querySelector("#wrong").textContent =
+        "Please enter a valid number.";
+    }
+  });
+  var cash = document.querySelector("#cod");
+  cash.addEventListener("click", function () {
+    var disText = document.querySelector("#dis");
+    disText.textContent = "Cash on Delivery is Available!!";
+  });
+
+  function openOTPPopup() {
+    const otpPopup = document.getElementById("otp-popup");
+    otpPopup.style.display = "flex";
+  }
+
+  function validateOTP() {
+    const otpInput = document.getElementById("otp-input").value;
+
+    if (otpInput === "1234") {
+      closeOTPPopup();
+     setTimeout(openConfirmOrderPopup,1000);
+    } else {
+      alert("Invalid OTP. Please try again.");
+    }
+  }
+
+  function closeOTPPopup() {
+    const otpPopup = document.getElementById("otp-popup");
+    otpPopup.style.display = "none";
+  }
+
+  function openConfirmOrderPopup() {
+    const confirmOrderPopup = document.getElementById("confirm-order-popup");
+    confirmOrderPopup.style.display = "flex";
+  }
+
+  function confirmOrder() {
+    closeConfirmOrderPopup();
+    window.location.href="Index.html"
+  }
+
+  function closeConfirmOrderPopup() {
+    const confirmOrderPopup = document.getElementById("confirm-order-popup");
+    confirmOrderPopup.style.display = "none";
+  }
+
+</script>
