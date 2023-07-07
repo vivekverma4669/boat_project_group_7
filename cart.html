@@ -5,140 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add to Cart</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      #NavContainer {
+        position: sticky;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        height: 70px;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+      .iconb {
+        margin-top: 20px;
+      }
 
-
-#NavContainer{
-    position: sticky;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    height: 70px;
-    justify-content: space-around;
-    margin-top: 10px;
-
-}
-.iconb{
-   margin-top: 20px;
-}
-
-#boat{
-    width: 90px;
-}
-#search{
-    padding-left: 30px;
-    width: 300px;
-    height: 35px;
-    background: url('https://cdn-icons-png.flaticon.com/512/482/482631.png');
-    background-position: 10px 10px ; 
-    background-repeat: no-repeat;
-    background-size: 17px;
-    border-radius: 40px;
-    border: 2px solid rgb(244,245,247);
-    background-color:rgb(244,245,247) ;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-.logo{
-    margin-top: 20px;
-    height: 35px;
-    width: 35px;
-    margin-left: -20px;
-}
-.logoP{
-    margin-top: 23px;
-    height: 30px;
-    width: 30px;
-}
-.top{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: 13px;
-    background-color: rgb(239,244,247);
-    height: 30px;
-    padding-top: 13px;
-    margin: -10px;
-    cursor: pointer;
-
-}
-.top>span{
-    font-weight: bold;
-}
-#NavContainer>div{
-    display: flex;
-   margin-top: 15px;
-   margin-right: 100px;
-   gap: 30px;
-   
-}
-.icon{
-    display: none;
-    color: black;
-    font-size: 30px;
-    margin-top: 15px;
-}
-#NavContainer>div>p:hover{
-    text-decoration: underline;
-    text-decoration-color: rgb(190, 55, 55);
-    text-decoration-thickness: 2px;
-    font-weight: bolder;
-    cursor: pointer;
-}
-a{
-    cursor: pointer;
-}
-
-
-/* After navbar */
-
-
-#videos{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-video{
-    width: 100%;
-    border-radius: 20px;
-}
-#videos>div>h3{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
- .sell{
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    margin-left: 40px;
- }
- .sell>span{
-    font-weight: bold;
- }
- .sell>span>span{
-    text-decoration: underline;
-    text-decoration-color: rgb(190, 55, 55);
- }
- 
-
-
- @media screen and (max-width: 1000px) {
-    .topnav p {display: none;}
-  
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    
-  }
-  
- @media screen and (max-width:800px){
-    #search{
+      #boat {
+        width: 90px;
+      }
+      #search {
+        padding-left: 30px;
+        width: 300px;
+        height: 35px;
+        background: url("https://cdn-icons-png.flaticon.com/512/482/482631.png");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        background-size: 17px;
+        border-radius: 40px;
+        border: 2px solid rgb(244, 245, 247);
+        background-color: rgb(244, 245, 247);
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+      .logo {
+        margin-top: 20px;
+        height: 35px;
+        width: 35px;
+        margin-left: -20px;
+      }
+      .logoP {
+        margin-top: 23px;
+        height: 30px;
+        width: 30px;
+      }
+      .top {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-size: 13px;
+        background-color: rgb(239, 244, 247);
+        height: 30px;
+        padding-top: 13px;
+        margin: -10px;
+        cursor: pointer;
+      }
+      .top > span {
+        font-weight: bold;
+      }
+      #NavContainer > div {
+        display: flex;
+        margin-top: 15px;
+        margin-right: 100px;
+        gap: 30px;
+      }
+      .icon {
         display: none;
-    }
-    #videos{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
+        color: black;
+        font-size: 30px;
+        margin-top: 15px;
+      }
+      #NavContainer > div > p:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(190, 55, 55);
+        text-decoration-thickness: 2px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+      a {
+        cursor: pointer;
+      }
+      /* After navbar */
       .parent {
         display: grid;
         background-color: #f7f9fa;
@@ -148,9 +91,11 @@ video{
       .child {
         margin-right: 20px;
         text-align: center;
+        font-family: "Poppins", sans-serif;
       }
       .sibling {
         margin-bottom: 20px;
+        font-family: "Poppins", sans-serif;
       }
       .sibling > p {
         margin-top: 1%;
@@ -166,30 +111,47 @@ video{
         background-color: #f7f9fa;
         width: 100%;
         height: 300px;
+        font-family: "Poppins", sans-serif;
+      }
+      #totalitems{
+        margin-left: -8%;
+        background-color: red;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
       }
       #gst {
         font-weight: 100;
         color: #d4d7d9;
         font-size: 20px;
+        margin-left: 25px;
+        margin-top: 1%;
+        font-family: "Poppins", sans-serif;
       }
-      #invoice{
+      #invoice {
         margin-left: 30px;
+        font-family: "Poppins", sans-serif;
       }
       #form {
         margin-left: 30px;
+        font-family: "Poppins", sans-serif;
       }
       #form > input {
         width: 10%;
         height: 25px;
         border-radius: 5%;
       }
-      #form > button {
+      #form > #button {
         width: 10.5%;
         height: 30px;
         border: none;
         cursor: pointer;
       }
-      #form > button:hover {
+      #form>#button:hover {
         background-color: black;
         color: aliceblue;
       }
@@ -203,6 +165,7 @@ video{
         display: flex;
         align-items: center;
         margin-left: 30px;
+        font-family: "Poppins", sans-serif;
       }
       #ConfirmOrder > button {
         width: 10%;
@@ -210,7 +173,8 @@ video{
         background-color: black;
         color: white;
         border-radius: 5%;
-        margin-left: 25px;
+        margin-left: 2%;
+        margin-top: 1%;
         cursor: pointer;
       }
       #ConfirmOrder > button:hover {
@@ -222,38 +186,313 @@ video{
         font-family: sans-serif;
         margin-bottom: -1%;
         margin-left: 30px;
+        font-family: "Poppins", sans-serif;
       }
-      #emptyCart{
+      #ConfirmOrder>h2{
+        margin-top: 2%;
+        font-family: "Poppins", sans-serif;
+      }
+      #emptyCart {
         margin-top: 20px;
-       text-align: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
       }
+      #ProdList {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-family: "Poppins", sans-serif;
+        gap: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      #ProdList > div > img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 320px;
+        cursor: pointer;
+      }
+      #ProdList > div {
+        position: relative;
+        border: 1px solid rgb(252, 250, 250);
+        border-radius: 10px;
+        background-color: rgb(227, 230, 236);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 460px;
+      }
+      #ProdList > div p:nth-child(4) {
+        font-size: 14px;
+      }
+      #ProdList > div p:nth-child(5) {
+        font-weight: bold;
+        margin-bottom: -5px;
+        cursor: pointer;
+      }
+      #ProdList > div > span {
+        margin-left: 5px;
+      }
+      #ProdList > div > span:nth-child(6) {
+        font-weight: bold;
+      }
+      #ProdList > div > s {
+        font-size: 12px;
+        color: grey;
+        margin-left: 2%;
+      }
+      #ProdList > div > span:nth-child(8) {
+        font-weight: bold;
+        color: green;
+        font-size: 10px;
+      }
+      #ProdList > div > button {
+        background-color: black;
+        color: white;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        height: 40px;
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      #ProdList > div > p:nth-child(3) {
+        position: absolute;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+        margin: auto;
+        bottom: 130px;
+        left: 50px;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 180px;
+        background-color: rgb(252, 197, 11);
+      }
+      #ProdList > div > p:nth-child(2) {
+        position: absolute;
+        border-radius: 0px 5px 5px 0px;
+        font-size: 9px;
+        font-weight: bold;
+        height: 19px;
+        top: 4px;
+        padding-top: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: black;
+        color: white;
+      }
+      @media screen and (max-width: 1000px) {
+    .topnav p {display: none;}
+  
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  
+  } 
+ @media screen and (max-width:800px){
+    #search{
+        display: none;
+    }
+    #videos{
+        grid-template-columns: repeat(2,1fr);
+    }
+  #ProdList{
+    grid-template-columns: repeat(2,1fr)
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.footer-container{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.item_content>img{
+    width: 151px;
+    height: 62px;
+    margin-left: 38px;
+    
+}
+.item_content>span{
+   
+    margin-left: 38px;
+    font-size: 24px;
+   font-weight: bold;
+   opacity: 1;
+   font-family: 'Poppins', sans-serif;
+   line-height: normal;
+   margin-bottom: 5px;
+   display: block;
+   color: #293036;
+   
+}
+#Subscribe_email{
+    font-size: 13px;
+    width: 433px;
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    padding: 0px 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+ #top {
+    
+    background-color:#e7f0f5;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #middle {
+    
+    background-color:#eff4f7;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-column {
+    
+    font-family: 'Poppins', sans-serif;
+    flex-basis: 20%;
+    margin-bottom: 18px;
+    margin-left: 84px;
+  }
+  
+  .footer-column h4 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #555555;
+  }
+  
+  .social-icon:hover {
+    color: #000000;
+
+  }
+
+  
+#bottom {
+  background-color: #e7f0f5;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #0e0303;
+}
+
+.social-icon:hover {
+  color: #000000;
+}
+
+.footer-links {
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #555555;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #000000;
+}
+
+.footer-copyright,
+.footer-contact {
+  margin-top: 20px;
+  color: #555555;
+  font-size: 12px;
+}
+.social-icons>span{
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
     </style>
   </head>
   <body>
+    <!--Nav part-->
 
-  <!--Nav part-->
+    <p class="top">
+      Groove to your favourite tunes with <span>Rockerz 235 V2 </span> — now at
+      <span>899</span>.💥 Shop now!
+    </p>
 
-  <p class="top">Groove to your favourite tunes with <span>Rockerz 235 V2 </span> — now at <span>899</span>.💥 Shop now!
-  </p>
-
-  <div id="NavContainer" class="topnav">
-    <a href="javascript:void(0);" class="icon">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a class="iconb" href="Nav.html"><img id="boat"
-        src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small.svg?v=1682421543" alt="Boatlogo"></a>
-    <div>
-      <p>Categories˅</p>
-      <p>Daily Deals</p>
-      <p>Gift With Boat</p>
-      <p>More˅</p>
+    <div id="NavContainer" class="topnav">
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="iconb" href="index.html"
+        ><img
+          id="boat"
+          src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small.svg?v=1682421543"
+          alt="Boatlogo"
+      /></a>
+      <div>
+        <p>Categories˅</p>
+        <p>Daily Deals</p>
+        <p>Gift With Boat</p>
+        <p>More˅</p>
+      </div>
+      <input id="search" type="text" placeholder="Search your product" />
+      <a href="login.html"
+        ><img
+          class="logoP"
+          src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989"
+          alt="loginlogo" />
+        </a>
+      <a href="cart.html"><img class="logo" src="images/Cart.png" alt="cart" /></a>
+      <p id="totalitems"></p>
     </div>
-    <input id="search" type="text" placeholder="Search your product">
-    <a href=""><img class="logoP"
-        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="loginlogo"> <p id="totalitems"></p></a>
-    <a href=""><img class="logo" src="images/Cart.png" alt="cart"></a>
-  </div>
-  <hr>
+    <hr />
     <!--Nav bottom-->
     <div class="parent">
       <div class="child">
@@ -299,14 +538,13 @@ video{
           <p>Billing</p>
         </div>
       </div>
-    
     </div>
 
     <div id="emptyCart"></div>
 
     <!--container to add all the add to cart data-->
 
-    <div id="container"></div>
+    <div id="ProdList"></div>
     <br />
     <br />
 
@@ -314,18 +552,16 @@ video{
 
     <div id="bottomPart">
       <br /><br />
-
-      <div id="form">
-        <input type="text" name="promo" placeholder="Coupon Code" id="promo" />
-        <br />
-        <br />
-        <button><span id="percent"> %</span> Apply Coupon ></button>
-      </div>
-
+  <form action="">
+    <div id="form">
+      <input type="text" name="promo" placeholder="Coupon Code" id="promo" />
+      <input type="submit" value="% Apply Coupon" id="button">
+    </div>
+  </form>
+     
       <br />
       <!--GST part  -->
       <div id="invoice">
-
         <input type="checkbox" id="check" />
         <label for="">
           Get
@@ -337,18 +573,291 @@ video{
             id="logo"
           />
         </label>
-        
       </div>
-    
 
       <!--Total Amount part-->
       <h3 id="ttl">Total Amount:</h3>
 
       <div id="ConfirmOrder">
-        <h2 id="totalAmount">₹ <span id="gst">Inclusive of all taxes</span></h2>
+        <h2 id="totalAmount"></h2>
+        <span id="gst">Inclusive of all taxes</span>
         <button>Confirm Order</button>
       </div>
     </div>
+
+
+    
+  <footer id="top">
+    <div class="footer-container">
+        <div class="item_content">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo.svg" alt="boatLogo">
+            <span>Subscribe to our email alerts!</span>
+            <span class="inputblock">
+               <input type="email" id="Subscribe_email" placeholder="Enter your email address">
+             </span>
+        </div>
+        
+        <div class="footer-column">
+            <h4>True Wireless Earbuds</h4>
+            <ul>
+              <li>Shop by Features</li>
+              <li>Noise Cancellation Earbuds</li>
+              <li>Gaming Earbuds</li>
+              <li>Large Playback Earbuds</li>
+              <li>Shop by Price</li>
+              <li>Earbuds Under 1000</li>
+              <li>Earbuds Under 2000</li>
+              <li>Earbuds Under 3000</li>
+              <li>Earbuds Under 4000</li>
+              <li>Earbuds Under 5000</li>
+              <li>Earbuds Above 5000</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>True Wireless Earbuds</h4>
+            <ul>
+              <li>Shop by Features</li>
+              <li>Noise Cancellation Earbuds</li>
+              <li>Gaming Earbuds</li>
+              <li>Large Playback Earbuds</li>
+              <li>Shop by Price</li>
+              <li>Earbuds Under 1000</li>
+              <li>Earbuds Under 2000</li>
+              <li>Earbuds Under 3000</li>
+              <li>Earbuds Under 4000</li>
+              <li>Earbuds Under 5000</li>
+              <li>Earbuds Above 5000</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>True Wireless Earbuds</h4>
+            <ul>
+              <li>Shop by Features</li>
+              <li>Noise Cancellation Earbuds</li>
+              <li>Gaming Earbuds</li>
+              <li>Large Playback Earbuds</li>
+              <li>Shop by Price</li>
+              <li>Earbuds Under 1000</li>
+              <li>Earbuds Under 2000</li>
+              <li>Earbuds Under 3000</li>
+              <li>Earbuds Under 4000</li>
+              <li>Earbuds Under 5000</li>
+              <li>Earbuds Above 5000</li>
+            </ul>
+          </div>  
+    </div>             
+  </footer>
+
+<!-- middle section  -->
+
+  <footer id="middle">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>True Wireless Earbuds</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Noise Cancellation Earbuds</li>
+          <li>Gaming Earbuds</li>
+          <li>Large Playback Earbuds</li>
+          <li>Shop by Price</li>
+          <li>Earbuds Under 1000</li>
+          <li>Earbuds Under 2000</li>
+          <li>Earbuds Under 3000</li>
+          <li>Earbuds Under 4000</li>
+          <li>Earbuds Under 5000</li>
+          <li>Earbuds Above 5000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Wireless Earphones</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Noise Cancellation Earphone</li>
+          <li>Long Playback Earphone</li>
+          <li>Clear Calling Earphone</li>
+          <li>Shop by Price</li>
+          <li>Neckbands Under 1000</li>
+          <li>Neckbands Under 2000</li>
+          <li>Neckbands Under 3000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Wired Earphones</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Wired Earphones with Mic</li>
+          <li>Shop by Price</li>
+          <li>Earphones Under 500</li>
+          <li>Earphones Under 1000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Wireless Headphones</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Noise Cancelling Headphones</li>
+          <li>Wireless Gaming Headphone</li>
+          <li>Long Playback Headphones</li>
+          <li>Shop by Price</li>
+          <li>Wireless Headphones Under 1000</li>
+          <li>Wireless Headphones Under 2000</li>
+          <li>Wireless Headphones Under 3000</li>
+          <li>Wireless Headphones Under 4000</li>
+          <li>Wireless Headphones Above 4000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Wired Headphones</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Wired Headphones with Mic</li>
+          <li>Headphones with Mic for PC</li>
+          <li>Shop by Price</li>
+          <li>Wired Headphones Under 1000</li>
+          <li>Wired Headphones Under 2000</li>
+          <li>Wired Headphones Under 3000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Gaming Headphones</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Gaming Headphones with Mic</li>
+          <li>Low Latency Headphone</li>
+          <li>RGB Light Headphones</li>
+          <li>Headphone for PC Gaming</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Wireless Speakers</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Portable Speakers</li>
+          <li>Long Playback Speakers</li>
+          <li>Waterproof Bluetooth Speaker</li>
+          <li>Party Speaker with RGB Lights</li>
+          <li>Speaker with Karaoke Mic</li>
+          <li>Shop by Price</li>
+          <li>Bluetooth Speakers Under 1000</li>
+          <li>Bluetooth Speakers Under 2000</li>
+          <li>Bluetooth Speakers Under 3000</li>
+          <li>Bluetooth Speakers Under 5000</li>
+          <li>Bluetooth Speakers Under 8000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Soundbars</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Dolby Soundbars</li>
+          <li>Soundbar with Wireless Subwoofer</li>
+          <li>Soundbar with Wired Subwoofer</li>
+          <li>Alexa Enabled Soundbar</li>
+          <li>Bluetooth Soundbar</li>
+          <li>Shop by Price</li>
+          <li>Soundbars Under 10000</li>
+          <li>Soundbars Under 20000</li>
+          <li>Soundbars Under 3000</li>
+          <li>Soundbars Under 5000</li>
+          <li>Soundbars Above 20000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Smart Watches</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Bluetooth Calling Smartwatches</li>
+          <li>Amoled Display Smartwatch</li>
+          <li>Round Dial Smartwatch</li>
+          <li>Fitness Tracker Smartwatch</li>
+          <li>Sports Tracker Smartwatch</li>
+          <li>Big Display Smartwatch</li>
+          <li>Shop by Price</li>
+          <li>Smartwatch Under 1000</li>
+          <li>Smartwatch Under 2000</li>
+          <li>Smartwatch Under 3000</li>
+          <li>Smartwatch Under 4000</li>
+          <li>Smartwatch Under 5000</li>
+          <li>Smartwatch Above 5000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Trimmers</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Grooming Kit for Men</li>
+          <li>Beard Styler</li>
+          <li>Trimmer for Men</li>
+          <li>Shop by Price</li>
+          <li>Trimmer Under 1000</li>
+          <li>Trimmer Under 2000</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Limited Editions</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Limited Edition Speakers</li>
+          <li>Limited Edition Earbuds</li>
+          <li>Limited Editions Smart Watch</li>
+          <li>Limited Editions Earphone</li>
+          <li>Limited Editions Headphones</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Car Accessories</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Car Charger</li>
+          <li>Aux Cable for Car</li>
+          <li>Shop by Price</li>
+          <li>Car Charger Under 500</li>
+          <li>Car Charger Above 500</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Trebel Range</h4>
+        <ul>
+          <li>Shop by Features</li>
+          <li>Smartwatch for Women</li>
+          <li>Earbuds for Women</li>
+          <li>Neckband for Women</li>
+          <li>Earphone for Women</li>
+          <li>Headphone for Women</li>
+        </ul>
+      </div>  
+    </div>
+  </footer>
+
+  <!-- bottom section  -->
+
+  <footer id="bottom">
+    <div class="social-icons">
+        <span>Let's get Social <a href="#" class="social-icon">
+            <i class="fa fa-facebook"></i>
+          </a> </span>
+      
+      <a href="#" class="social-icon">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2023 Imagine Marketing Limited. All Rights Reserved.
+    </div>
+    <div class="footer-contact">
+      For queries contact us: Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing, Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India
+    </div>
+  </footer>
   </body>
 </html>
 <script src="cart.js"></script>
