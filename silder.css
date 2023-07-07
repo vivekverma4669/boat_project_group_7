@@ -1,18 +1,22 @@
-@media only screen and (min-width: 0px) and (max-width: 720px) {
+/* @media only screen and (min-width: 0px) and (max-width: 720px) {
     #image1 {
-      content: url('./images/img1720.webp');
+      content: url('');
     }
     #image2{
-      content: url('./images/img2720\ \(2\).webp');
+      content: url('');
     }
     #image3{
-      content: url('./images/img3720\ \(2\).webp');
+      content: url('');
     }
     #image4{
-      content: url('./images/img4720.webp');
+      content: url('');
     }
-  }
+  } 
+  if required*/
   
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -23,6 +27,7 @@ body{
 .slider{
     /* border: 2px solid rgb(255, 0, 0); */
     width :100%;
+    margin-top: -10px;
     /* height :95%; */
     overflow: hidden;
 }
@@ -110,20 +115,19 @@ margin-left: -60%;
     margin-right: 40px;
 }
 
-#radio1:checked ~.auto-navigate .auto-btn1{
-    background-color: rgb(255, 255, 255);
-    color: white;
+#radio1:checked~.auto-navigate .auto-btn1{
+    background-color: black;
 }
 #radio2:checked~.auto-navigate .auto-btn2{
-    background-color : rgb(255, 255, 255);
-    color: white;
+    background-color : black;
 }
 #radio3:checked~.auto-navigate .auto-btn3{
-    background-color: rgb(255, 255, 255);
-    color: white;
+    background-color: black;
 }
 #radio4:checked~.auto-navigate .auto-btn4{
-    background-color: rgb(255, 255, 255);
-    color: white;
+    background-color: black;
 }
+
+
+
 
