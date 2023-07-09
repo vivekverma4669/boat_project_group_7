@@ -3,7 +3,6 @@ This is a group project to create a clone of the Boat e-commerce website. The pr
 media queries. The team consists of four members: Vivek Verma, Gaurav Rana, Gaurav Sharma, and Deveder Shakya.
 
 ## Project Overview
-
 The project aims to recreate the core functionalities of the Boat e-commerce website. It includes the following pages:
 
 - Home Page: Displays the main landing page with a navigation bar.
@@ -13,7 +12,7 @@ The project aims to recreate the core functionalities of the Boat e-commerce web
 - Footer: Provides additional information and links at the bottom of each page.
 - Login / Signup Page: Allows users to create an account or log in to an existing account.
 - Payment Page: Allows users to complete the checkout process.
-- 
+- All pages with nav bar and footer.
 
 ## Technologies Used
 The project utilizes the following technologies:
@@ -40,7 +39,8 @@ To run the project locally, follow these steps:
 ## Project Structure
 The project structure is organized as follows:
 
-- `index.html`: Entry point of the website, contains the home page.
+- `Index.html`: Entry point of the website, contains the home page.
+-  `Nav.html` : to navigate all the pages with search functionality
 - `productDetails[number of product].html`: Page displaying the detailed information of a product.
 - `product.html`: Page listing all available products.
 - `payment.html`: Page for completing the checkout process.
