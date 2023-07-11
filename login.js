@@ -13,7 +13,7 @@ function validateUser() {
             console.log(storedPassword);
             if (email === storedEmail && password === storedPassword) {      
              alert("Login successful!");    
-             window.location.replace('Index.html');
+             window.location.href='Index.html';
                 return;
             }
         })
