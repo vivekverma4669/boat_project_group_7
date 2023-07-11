@@ -60,10 +60,32 @@ var products=[
     org.textContent=ele.org;
     off.textContent=ele.off;
     add.textContent="Add To Cart";
+    if(ele.name=="Airdopes 115"){
+      img.addEventListener("click",function(){
+        window.location.href="dailyProduct1.html";
+      })
+    }
+    if(ele.name=="Wave Flex Connect"){
+      img.addEventListener("click",function(){
+        window.location.href="dailyProduct2.html";
+      })
+    }
+    if(ele.name=="Airdopes 131"){
+      img.addEventListener("click",function(){
+        window.location.href="dailyProduct3.html";
+      })
+    }
+    if(ele.name=="Storm Call"){
+      img.addEventListener("click",function(){
+        window.location.href="dailyProduct4.html";
+      })
+    }
+   
 
    add.addEventListener("click",function(){
     var arr=JSON.parse(localStorage.getItem("cart")) || [];
     arr.push(ele);
+    alert("Product added to cart");
     localStorage.setItem("cart",JSON.stringify(arr));
   })
     Lparent.append(img,Ssuper,work,rating,name,desc,org,off,add);
@@ -206,6 +228,7 @@ launches.map(function(ele,idx){
  add.addEventListener("click",function(){
   var arr=JSON.parse(localStorage.getItem("cart")) || [];
   arr.push(ele);
+  alert("Product added to cart");
   localStorage.setItem("cart",JSON.stringify(arr));
 })
   Lparent.append(img,Ssuper,work,rating,name,desc,org,off,add);
