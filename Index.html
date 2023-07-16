@@ -50,6 +50,7 @@
       <input type="radio" name="radio-btn" id="radio2">
       <input type="radio" name="radio-btn" id="radio3">
       <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
       <!-- radio butto end -->
 
       <!-- slide image  -->
@@ -70,8 +71,13 @@
       </div>
 
       <div class="slide">
-        <img src="https://www.boat-lifestyle.com/cdn/shop/files/SASS_DESKTOP_1400x.jpg?v=1686545976" alt="image"
+        <img src="https://www.boat-lifestyle.com/cdn/shop/files/ADMAX_desktop_1199_dc9e857a-3d20-427f-8c32-e962bed332de_1440x.jpg?v=1689359641" alt="image"
           id="image4">
+      </div>
+
+      <div class="slide">
+        <img src="https://www.boat-lifestyle.com/cdn/shop/files/AD-141-Neo-Desktop_1440x.jpg?v=1689360152" alt="image"
+          id="image5">
       </div>
 
       <!-- image end -->
@@ -83,6 +89,7 @@
         <div class="auto-btn2"></div>
         <div class="auto-btn3"></div>
         <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
       </div>
       <!-- auto navigation end -->
 
@@ -94,6 +101,7 @@
       <label for="radio2" class="manual-btn"></label>
       <label for="radio3" class="manual-btn"></label>
       <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
     </div>
     <!-- manual-navigate end-- -->
 
@@ -466,7 +474,7 @@
   setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if (counter > 4) {
+    if (counter > 5) {
       counter = 1;
     }
   }, 3500);

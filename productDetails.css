@@ -185,7 +185,10 @@ display: inline;
   .desImage img{ 
     width: 100%
   }
+#reviews img{
+  width: 100%;
 
+}
   .description{
     /* margin-top: 5px; */
     justify-content: center;
@@ -298,6 +301,14 @@ display: inline;
     .lastspecification img{
       width: 100%;
       /* filter: invert(); */
+    }
+    #faq h1{
+      text-align: center;
+    }
+    #faq{
+      background-color: #172d51;
+      color: white;
+      padding: 10px;
     }
 
    

@@ -1,5 +1,4 @@
 
-  
 body{
     margin: 0;
     padding: 0;
@@ -38,7 +37,7 @@ display: flex;
  margin: auto;
  height: fit-content;
  width: fit-content;
- gap: 10px;
+ gap: 3px;
  border-radius: 40px;
  background: #FFFFFF52;
  /* opacity: 0.5; */
@@ -80,6 +79,9 @@ margin-left: -40%;
 #radio4:checked~.first{
 margin-left: -60%;
 }
+#radio5:checked~.first{
+margin-left: -80%;
+}
 
 
 /* css for automatic navigation */
@@ -99,16 +101,20 @@ margin-left: -60%;
 }
 
 #radio1:checked~.auto-navigate .auto-btn1{
-    background-color: black;
+    background-color: white;
 }
-#radio2:checked~.auto-navigate .auto-btn2{
-    background-color : black;
+#radio2:checked~.auto-navigate .auto-btn2 {
+    background-color : white;
 }
 #radio3:checked~.auto-navigate .auto-btn3{
-    background-color: black;
+    background-color: white;
 }
 #radio4:checked~.auto-navigate .auto-btn4{
-    background-color: black;
+    background-color: white;
+}
+
+#radio4:checked~.auto-navigate .auto-btn5{
+    background-color: white;
 }
 
 
