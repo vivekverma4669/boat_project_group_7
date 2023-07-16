@@ -236,6 +236,195 @@
 }
 
 
+/* new code start*/
+
+#main{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+#main > span{
+    font-weight: bold;
+}
+#main> span > span{
+    text-decoration: underline 2px solid red;
+    
+}
+.bigmain{
+      width: 97%;
+      margin: auto;
+      overflow-x: scroll;
+      scrollbar-width: none;
+}
+.bigmain::-webkit-scrollbar {
+    display: none; 
+}
+#main1{
+    display: flex;
+    /* width: 1680px; */
+    width: 100%;
+    /* width: 1280px; */
+    gap: 20px;
+    
+}
+#main1 > div{
+    /* width: 320px; */
+    width: 100%;
+    border-radius: 10px;
+}
+#main1 > div > a > video{
+    width: 100%;
+    border-radius: 10px;
+}
+#main1 > div > p{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.discountbanner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .discountbanner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .discountbanner .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    width: 80%;
+  }
+.discountbanner span{
+    font-weight: bold;
+}
+
+#main2{
+     margin-top: 20px;
+     margin-bottom: 20px;
+    display: flex;
+    /* width: 1340px; */
+    width: 100%;
+    gap: 20px;
+}
+#main2 > div{
+    /* width: 320px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+#main2 > div > div > a > img{
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+}
+#main2 > div >div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: #FAFAFA;
+    border-radius: 0 0 10px 10px;
+}
+#main2 > div > div:nth-child(2) > div:nth-child(1) > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+#main2 > div > div:nth-child(2) > div:nth-child(1) > p:nth-child(2){
+    margin-top: -15px;
+    font-size: 16px;
+}
+#main2 > div > div:nth-child(2) > div:nth-child(1) > p:nth-child(2) > span:nth-child(1){
+    text-decoration: line-through;
+    color: #b2b9bf;
+    font-size: 12px;
+}
+#main2 > div > div:nth-child(2) > div:nth-child(1) > p:nth-child(2) > span:nth-child(2){
+    color: #12b985;
+    font-size: 10px;
+}
+#main2 > div > div:nth-child(2) > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    
+}
+#main2 > div > div:nth-child(2) > div:nth-child(2) > button{
+    font-size: 14px;
+    border: 0;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}
+
+#main6{
+    display: flex;
+    width: 1870px;
+    gap: 20px;
+}
+#main6 > div{
+    width: 250px;
+}
+#main6 > div > div:nth-child(1) > a > video{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+#main6 > div > div:nth-child(2){
+    background-color: #eff4f7;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 5px;
+}
+#main6 > div > div:nth-child(2) > div{
+    width: 25%;
+    margin-left: 35%;
+    margin-top: -35px;
+    
+}
+#main6 > div > div:nth-child(2) > div > a > img{
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.5px solid #b2b9bf;
+    border-radius: 5px;
+}
+#main6 > div > div:nth-child(2) > p {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+#main6 > div > div:nth-child(2) > p:nth-child(2){
+    margin-top: 10px;
+}
+#main6 > div > div:nth-child(2) > p:nth-child(3){
+    font-size: 16px;
+    margin-top: -10px;
+}
+#main6 > div > div:nth-child(2) > p:nth-child(3) > span:nth-child(1){
+    text-decoration: line-through;
+    color: #b2b9bf;
+    font-size: 12px;
+}
+#main6 > div > div:nth-child(2) > p:nth-child(3) >span:nth-child(2){
+    color: #12b985;
+    font-size: 10px;
+}
+
+
+/* new code end */
+
+
 
 
 @media screen and (max-width: 1000px) {
