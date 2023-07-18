@@ -1,6 +1,6 @@
 # Boat E-commerce Website Clone
 This is a group project to create a clone of the Boat e-commerce website. The project focuses on using local storage to save data and making the website responsive using 
-media queries. The team consists of four members: Vivek Verma, Gaurav Rana, Gaurav Sharma, and Deveder Shakya.
+media queries and Flex Properties . 
 
 ## Project Overview
 The project aims to recreate the core functionalities of the Boat e-commerce website. It includes the following pages:
