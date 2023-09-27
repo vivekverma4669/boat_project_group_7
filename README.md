@@ -40,13 +40,35 @@ To run the project locally, follow these steps:
 The project structure is organized as follows:
 
 - `Index.html`: Entry point of the website, contains the home page.
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/0a251d72-9bec-426e-a74e-efc6132393ef)
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/f76f35c2-10be-468f-a5f8-e3d170cb8545)
+
+
 -  `Nav.html` : to navigate all the pages with search functionality
 - `productDetails[number of product].html`: Page displaying the detailed information of a product.
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/603e4b65-1448-4507-8be9-a2f4400c2631)
+
 - `product.html`: Page listing all available products.
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/21456aee-8c32-48c6-99cd-1c20beb573d0)
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/96ccdaaf-fd56-41e9-8384-3fba75d6603b)
+
 - `payment.html`: Page for completing the checkout process.
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/b564404d-7277-4c1c-8b9e-497d56e25ce9)
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/4ba977b8-dce3-43a9-a775-75733233ddc0)
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/0ddf2167-6e7c-438e-a4a4-7512d2841ac6)
+
+  
 - `cart.html`: Page displaying the user's shopping cart.
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/b4ef51c1-7b24-4a00-bf9a-d9d0aacd4b9d)
+
 - `footer.html`: HTML snippet for the footer section included on every page.
+ ![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/05208793-78cc-4716-978c-3e6a30224d1e)
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/0e00662a-bf73-4c4e-a283-6955d2be5b86)
+
 - `login.html` and `signup.html`: Pages for user authentication.
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/0ea0105c-1da6-40d9-8f4a-e5f00b2db65d)
+![image](https://github.com/vivekverma4669/boat_project_group_7/assets/133829592/31ffd8ad-d7a7-4bf0-b1ff-cba2890dee1a)
+
 - `css/`: Directory containing CSS stylesheets .
 - `js/`: Directory containing JavaScript files.
 - `images/`: Directory storing project images.
