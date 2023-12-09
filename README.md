@@ -25,7 +25,7 @@ The project utilizes the following technologies:
 
 
 ## Deployment
-The project has been deployed using Netlify. You can access the live website by visiting the following link: [Boat E-commerce Clone](https://storied-chimera-2168ba.netlify.app/).
+The project has been deployed using Netlify. You can access the live website by visiting the following link: [Boat E-commerce Clone](https://64b52a5f1165af0f63d1969a--elaborate-paprenjak-06f23e.netlify.app/).
 
 
 ## Installation and Setup
